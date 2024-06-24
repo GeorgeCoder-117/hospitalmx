@@ -857,7 +857,7 @@ a {
 
 .btnRecomen:hover {
     background-color: var(--white-color);
-    color: var(--white-color);
+    color: var(--black-color-light);
 }
 
 @media screen and (min-width: 767px) {
