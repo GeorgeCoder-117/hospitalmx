@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/boxicons.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--=============== MAIN CSS ===============-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Hospital</title>
+</head>
+
+<body>
+    <a class="whats-btn" href="https://wa.me/+525544007236" target="_blank">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <div class="scroll-up">
+        <i class='bx bxs-up-arrow'></i>
+    </div>
+
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                    <i class='bx bxl-digitalocean'></i> Hospital
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu nav__burger'></i>
+                    <i class='bx bx-x nav__close'></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link active">Inicio</a></li>
+
+                    <li><a href="#" class="nav__link">Servicios</a></li>
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Especialidades <i class='bx bx-chevron-down'></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-pie-chart-line"></i> Ginecología
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i> Gastrointerología
+                                </a>
+                            </li>
+
+                            <!--=============== DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Más <i class='bx bx-plus'></i>
+                                </div>
+
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            <i class="ri-file-list-line"></i> Especialidad 3
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            <i class="ri-cash-line"></i> Especialidad 4
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            <i class="ri-refund-2-line"></i> Especialidad 5
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="nav__link">Embarazo</a></li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Promociones <i class='bx bx-chevron-down'></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-user-line"></i> Promo 1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-lock-line"></i> Promo 2
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-message-3-line"></i> Promo 3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="nav__link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN SLIDER -->
+    <div class="slide">
+        <div class="slider fade">
+            <img src="img/hospital1.jpg" alt="">
+        </div>
+
+        <div class="slider fade">
+            <img src="img/hospital2.jpg" alt="">
+        </div>
+
+        <div class="slider fade">
+            <img src="img/hospital3.jpg" alt="">
+        </div>
+
+        <div class="direcciones">
+            <a class="back" onclick="moveSlide(-1)"><i class='bx bx-chevron-left'></i></a>
+            <a class="foward" onclick="moveSlide(1)"><i class='bx bx-chevron-right'></i></a>
+        </div>
+
+        <div class="circles">
+            <span class="circle active" onclick="slidePosition(0)"></span>
+            <span class="circle" onclick="slidePosition(1)"></span>
+            <span class="circle" onclick="slidePosition(2)"></span>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- 1° SECCION INFORMATIVA -->
+    <div class="container_seccion_1">
+        <div class="container_info1 swiper">
+            <div class="swiper-wrapper">
+                <article class="info_card1 swiper-slide">
+                    <img src="img/metodo3.jpg" alt="" class="info_img">
+                    <div class="info_details">
+                        <h5>Tratamiento 2</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .
+                        </p>
+                    </div>
+                </article>
+                <article class="info_card1 swiper-slide">
+                    <img src="img/metodo2.jpg" alt="" class="info_img">
+                    <div class="info_details">
+                        <h5>Tratamiento 3</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .
+                        </p>
+                    </div>
+                </article>
+                <article class="info_card1 swiper-slide">
+                    <img src="img/metodo3.jpg" alt="" class="info_img">
+                    <div class="info_details">
+                        <h5>Tratamiento 4</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .
+                        </p>
+                    </div>
+                </article>
+                <article class="info_card1 swiper-slide">
+                    <img src="img/metodo2.jpg" alt="" class="info_img">
+                    <div class="info_details">
+                        <h5>Tratamiento 1</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="swiper-button-next">
+                <i class='bx bxs-chevron-right'></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class='bx bxs-chevron-left'></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2° SECCION INFORMATIVA -->
+    <div class="container_seccion_2">
+        <div class="info_gradient">
+            <div class="details_gradient1">
+                La mejor atención y calidad para tu salud.
+            </div>
+            <div class="details_gradient2">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 3° SECCION INFORMATIVA -->
+    <div class="container_seccion_3">
+        <div class="value__container">
+            <!-- <div class="value__images"> -->
+            <div class="value__img">
+                <img src="img/metodo1.jpg" alt="">
+            </div>
+            <!-- </div> -->
+            <div class="value__content">
+                <div class="value__data">
+                    <h2 class="section__title">
+                        Valor que te damos<span>.</span>
+                    </h2>
+                    <br>
+                    <p class="value__description">
+                        Siempre estamos dispuestos a ayudar ofreciendote el mejor servicio médico.
+                    </p>
+                </div>
+
+                <div class="value__accordion">
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class='bx bx-check-shield value__accordion-icon'></i>
+                            <h3 class="value__accordion-title">
+                                Con los más altos estandares
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class='bx bxs-down-arrow'></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-description">
+                                Realizamos las pruebas más exhaustivas y detalladas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class='bx bx-lock-alt value__accordion-icon'></i>
+                            <h3 class="value__accordion-title">
+                                Prevenimos tu seguridad
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class='bx bxs-down-arrow'></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-description">
+                                Garantizamos la calidad de la atenció brindada.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class='bx bx-bar-chart-square value__accordion-icon'></i>
+                            <h3 class="value__accordion-title">
+                                El mejor servicio médico.
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class='bx bxs-down-arrow'></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-description">
+                                Garantizamos la calidad de nuestros servicios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sección recomendaciones -->
+    <div class="service__cont grid cont">
+        <div class="service__data">
+            <h2 class="section__title">
+                RECOMENDACIÓN <span>1.</span>
+            </h2>
+            <br>
+            <p class="service__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                 nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a class="btnRecomen reveal" id="servBtnEsc">Más información</a>
+        </div>
+        <!-- <div class="box"> -->
+        <img src="img/metodo1.jpg" alt="" class="">
+        <!-- </div> -->
+
+    </div>
+
+    <div class="service__cont grid contSinFondo">
+        <img src="img/metodo1.jpg" alt="" class="">
+        <div class="service__data">
+            <h2 class="section__title">
+                RECOMENDACIÓN <span>2.</span>
+            </h2>
+            <br>
+            <p class="service__description" id="servDescCorp">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                 nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a class="btnRecomen" id="servBtnCorp">Más información</a>
+        </div>
+    </div>
+
+    <div class="service__cont grid cont">
+        <div class="service__data">
+            <h2 class="section__title">
+                RECOMENDACIÓN <span>3.</span>
+            </h2>
+            <br>
+            <p class="service__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                 nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a class="btnRecomen reveal" id="servBtnTur">Más información</a>
+
+        </div>
+        <img src="img/metodo1.jpg" alt="" class="">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="">
+                <img class="footer__logo" src="img/logo.png" alt="">
+                <p class="footer__description">
+                    Servicio de calidad
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        Acerca de
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a id="btnNosotros" class="footer__link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="footer__link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Compañía
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" target="_blank" class="footer__link">
+                                Info 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="footer__link">
+                                Info 2
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Redes Sociales
+                    </h3>
+
+                    <ul class="footer__social">
+                        <li>
+                            <a href="https://www.facebook.com/scholasticomx" target="_blank"
+                                class="footer__social-link">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/scholasticomx?igshid=MzRlODBiNWFlZA==" target="_blank"
+                                class="footer__social-link">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/scholastico/" target="_blank"
+                                class="footer__social-link">
+                                <i class='bx bxl-linkedin-square'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                ©Hospital 2024
+            </span>
+
+            <div class="footer__privacy">
+                <!-- <a id="btnPrivacy">Aviso de privacidad</a>
+                <a id="btnCookies">Políticas de cookies</a> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- LAST JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- SWIPER SLIDER -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--=============== FILTER JS ===============-->
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
